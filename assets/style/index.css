@@ -102,6 +102,112 @@ section.fan-fare {
     margin-right: 45px;
 }
 
+section.point {
+    width: 100%;
+    padding: 120px 0px;
+}
+
+.point-bg {
+    background-color: #F57627;
+}
+
+.point__title img{
+    max-width: 404px;
+    margin: 0 auto;
+}
+
+h3.title__hl {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+h3.title__hl span {
+    display: inline-block;
+    margin-bottom: 6px;
+    background-color: #fff;
+    color: #F57627;
+    padding: 3px;
+}
+
+.point__content p {
+    font-size: 16px;
+    color: #fff;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.point__bottom {
+    margin-top: 75px;
+    color: #fff;
+    text-align: center;
+}
+
+.point__bottom > span {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+}
+
+.point__bottom p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.point__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.point__list li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px;
+    width: calc(100%/6 - 20px);
+    min-width: 155px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.point__list li:nth-child(6) {
+    margin-right: 0px;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.point__list li img {
+    width: auto;
+    margin: 0 auto;
+}
+
+.point__list li > p {
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.point__content {
+    margin-top: 120px;
+}
+
+
+@media only screen and (max-width:1100px) {
+    .point__list li:nth-child(6) {
+        margin-right: 20px;
+    }
+}
+
 @media only screen and (max-width:767px) {
     .eyecatch  {
         height: auto;
@@ -156,5 +262,20 @@ section.fan-fare {
     .img__item {
         width: 144px;
         margin: 0 20px;
+    }
+    .point__title img{
+        max-width: 253px;
+    }
+    .point__list  {
+        justify-content: space-between;
+    }
+    .point__list li {
+        min-width: unset;
+        width: calc(100%/2 - 10px);
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .point__list li:nth-child(6) {
+        margin-right: 0px;
     }
 }
