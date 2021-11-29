@@ -305,6 +305,70 @@ h3.title__hl-bg span {
     margin-top: 30px;
 }
 
+.point__content-r {
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+    align-items: center;
+}
+
+.point__content-r .title {
+    max-width: 440px;
+    margin-bottom: 17px;
+}
+
+.point__content-r > img {
+    max-width: 504px;
+}
+
+.option {
+    margin-top: 55px;
+}
+
+.option img {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.option > p {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 100%;
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section.fan-fare-link {
+    background-image: url(../images/bg-fanfare02.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 140px 0px;
+}
+
+.fan-fare-link img {
+    max-width: 76px;
+    margin:  0 auto;
+}
+
+.fan-fare-link  h2 {
+    font-size: 34px;
+    font-weight: 900;
+    margin: 40px 0px 50px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+.fan-fare-link .link img{
+    max-width: 327px;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width:1100px) {
     .point__list li:nth-child(6) {
         margin-right: 20px;
@@ -449,5 +513,10 @@ h3.title__hl-bg span {
     }
     .point02__bottom .desc h3 {
         text-align: center;
+    }
+    .point__content-r {
+        float: unset;
+        width: 100%;
+        margin-top: 30px;
     }
 }
