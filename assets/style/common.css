@@ -36,6 +36,10 @@ body {
     height: 100%;
 }
 
+.color-w {
+    color: #fff !important;
+}
+
 :root {
     /* Colors: */
     --unnamed-color-e50012: #E50012;
