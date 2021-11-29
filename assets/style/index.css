@@ -105,7 +105,20 @@ section.fan-fare {
 section.point {
     width: 100%;
     padding: 120px 0px;
+    position: relative;
 }
+
+section.point .container {
+    position: relative;
+}
+
+.point-title-ab {
+    position: absolute;
+    right: 25px;
+    top: 12%;
+    width: 55.5%;
+}
+
 
 .point-bg {
     background-color: #F57627;
@@ -119,6 +132,7 @@ section.point {
 h3.title__hl {
     font-size: 24px;
     font-weight: 900;
+    position: relative;
 }
 
 h3.title__hl span {
@@ -277,5 +291,24 @@ h3.title__hl span {
     }
     .point__list li:nth-child(6) {
         margin-right: 0px;
+    }
+    section.point {
+        padding: 40px 0px;
+    }
+    .point-title-ab {
+        right: 25px;
+        left: 25px;
+        width: auto;
+        max-width: 300px;
+        top: 4.5%;
+    }
+    .point__content p {
+        max-width: 100%;
+    }
+    .point__bottom {
+        margin-top: 40px;
+    }
+    .point__content {
+        margin-top: 100px;
     }
 }
