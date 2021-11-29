@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto ;
+    padding: 0 25px;
+}
+
+.h100 {
+    height: 100%;
+}
+
+:root {
+    /* Colors: */
+    --unnamed-color-e50012: #E50012;
+    --unnamed-color-f57627: #F57627;
+    --unnamed-color-d0d0d0: #D0D0D0;
+    --unnamed-color-efefef: #EFEFEF;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-000000: #000000;
+}
+
+.only-pc {
+    display: block;
+}
+.only-sp {
+    display: none;
+}
+@media only screen and (max-width:767px) {
+    .only-pc {
+        display: none;
+    }
+    .only-sp {
+        display: block;
+    }
+}
+
+
+/* ======header====== */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 200;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__logo {
+    padding: 10px 20px;
+}
+
+.header__logo a:hover img{
+    opacity:0.7; 
+}
+
+.header__logo a img {
+    max-width: 132px;
+}
+
+.header__r {
+    display: flex;
+    align-items: center;
+}
+
+.header__r li a {
+    min-width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.header__r li a  img {
+    max-width: 24px;
+    margin-right: 5px;
+}
+
+.header__r li a:hover{
+    opacity: 0.8;
+}
+
+.header__r li:nth-child(1) {
+    margin-right: 20px;
+}
+
+.header__r li:nth-child(2) a {
+    background-color: #E50A17;
+}
+
+.header__r li:nth-child(3) a {
+    background-color: var(--unnamed-color-f57627);
+}
+
+@media only screen and (max-width:767px) {
+    body {
+        min-width: 320px;
+        overflow-x: hidden;
+    }
+    .header__r li a img {
+        max-width: 21px;
+    }
+    .header__r li a {
+        min-width: 90px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .header__r li:nth-child(1) a {
+        min-width: unset;
+    }
+    .header__r li:nth-child(1) {
+        margin-right: 10px;
+    }
+    .header__logo a img {
+        width: 95px;
+    }
+    .header__logo {
+        padding:10px;
+    }
+    .header__inner {
+        align-items: center;
+    }
+}
+/* ======header====== */
