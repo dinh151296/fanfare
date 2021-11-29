@@ -285,6 +285,26 @@ h3.title__hl-bg span {
     text-align: center;
 }
 
+.point02__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 370px;
+}
+
+.point02__bottom img {
+    width: 45%;
+}
+
+.point02__bottom .desc {
+    width: 50%;
+}
+
+.point02__bottom .desc p {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
 @media only screen and (max-width:1100px) {
     .point__list li:nth-child(6) {
         margin-right: 20px;
@@ -414,5 +434,20 @@ h3.title__hl-bg span {
     }
     .point02__block span {
         margin-top: 20px;
+    }
+    .point02__bottom {
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    .point02__bottom img {
+        width: 100%;
+    }
+    .point02__bottom .desc {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .point02__bottom .desc h3 {
+        text-align: center;
     }
 }
