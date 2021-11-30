@@ -369,6 +369,198 @@ section.fan-fare-link {
     margin: 0 auto;
 }
 
+.fanfare-register{
+    background-image: url(../images/mv_pc_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 620px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fanfare-register img {
+    display: block;
+    width: 90px;
+    margin-bottom: 40px;
+}
+.fanfare-register span {
+    display: block;
+    width: 560px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.fanfare-register button {
+    min-width: 375px;
+    height: 72px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #E50012;
+    border: none;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+}
+.fanfare-register.fanfare-register-top {
+    background-image: url(../images/mv_pc_2.png);
+}
+.fanfare-register.fanfare-register-top button{
+    color: #fff;
+    background-color: #E50012;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0px;
+}
+.faq-title  img{
+    max-width: 404px;
+    display: block;
+}
+.list-faq {
+    max-width: 867px;
+    padding: 0px 25px;
+}
+.faq-content {
+    margin-bottom: 15px;
+}
+.question-q, .question-a {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.question-a {
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
+    background-color: #EFEFEF;
+}
+.question-q .icon, .question-a .icon{
+    width: 35px;
+    height: 35px;
+    margin-right: 24px;
+}
+.question-q .action-minus {
+    width: 30px;
+    height: 4px;
+}
+.question-q .action-plus {
+    width: 30px;
+    height: 30px;
+}
+.question-q span, .question-a span {
+    font-size: 15px;
+    line-height: 35px;
+    margin-right: 30px;
+}
+.question-q span {
+    font-weight: bold;
+}
+
+section.step {
+    padding: 140px 0px 0px;
+}
+
+.step__title {
+    max-width: 544px;
+    margin: 0 auto;
+}
+
+.step__content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step__number {
+    width: 16%;
+    min-width: 168px;
+    padding-left: 30px;
+}
+
+.step__number img {
+    max-width: 54px;
+}
+
+.step__desc-wrap {
+    flex: 1;
+    
+}
+
+.step__desc {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.step__desc:last-of-type {
+    margin-bottom: 0px;
+}
+
+.step__desc > img {
+    max-width: 37.5%;
+}
+
+.step__desc-r {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.step__desc-r span {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--unnamed-color-f57627);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.step__desc-r > h3 {
+    position: relative;
+    font-size: 26px;
+    color: var(--unnamed-color-f57627);
+    display: inline;
+}
+
+.step__desc-r > h3 img {
+    position: absolute;
+    width: 72px;
+    left: 100%;
+    bottom: 0;
+}
+
+.step__check {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.step__desc-r > p {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.step__check > img {
+    max-width: 23px;
+    margin-right: 8px;
+}
+
+.step__check > p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 @media only screen and (max-width:1100px) {
     .point__list li:nth-child(6) {
         margin-right: 20px;
@@ -376,6 +568,38 @@ section.fan-fare-link {
 }
 
 @media only screen and (max-width:767px) {
+    .list-faq {
+        max-width: 100%;
+    }
+    .faq-title img {
+        max-width: 250px;
+    }
+    section.step {
+        padding: 60px 0px 0px;
+    }
+    .step__content  {
+        margin-top: 40px;
+    }
+    .step__title {
+        max-width: 317px;
+    }
+    .step__desc {
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+    .step__desc > img {
+        max-width: 100%;
+    }
+    .step__desc-r {
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+    .step__desc-r > h3 {
+        font-size: 22px;
+    }
+    .step__check {
+        margin-top: 20px;
+    }
     .eyecatch  {
         height: auto;
         padding: 95px 0;
